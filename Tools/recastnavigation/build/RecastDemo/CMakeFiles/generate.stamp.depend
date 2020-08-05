@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindOpenGL.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindPackageMessage.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindPkgConfig.cmake
+D:/recastnavigation/RecastDemo/CMakeLists.txt
+D:/recastnavigation/RecastDemo/cmake/FindSDL2.cmake

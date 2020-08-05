@@ -1,0 +1,23 @@
+﻿  DetourCrowd.cpp
+  DetourLocalBoundary.cpp
+  DetourObstacleAvoidance.cpp
+  DetourPathCorridor.cpp
+  DetourPathQueue.cpp
+  DetourProximityGrid.cpp
+  DetourAlloc.cpp
+  DetourCommon.cpp
+  DetourNavMesh.cpp
+  DetourNavMeshBuilder.cpp
+  DetourNavMeshQuery.cpp
+  DetourNode.cpp
+  DetourCrowdEx.cpp
+  DetourNavMeshBuildEx.cpp
+  DetourNavmeshEx.cpp
+  DetourNavMeshQueryEx.cpp
+  DetourPathCorridorEx.cpp
+  DetourQueryFilterEx.cpp
+  NavValidation.cpp
+  正在生成代码...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+     正在创建库 ..\bin\Debug\cai-nav-rcn.lib 和对象 ..\bin\Debug\cai-nav-rcn.exp
+  cai-nav-rcn.vcxproj -> D:\NavMesh\cai-nav-0.4.0\source\build\unity\nav-rcn\..\bin\Debug\cai-nav-rcn.dll

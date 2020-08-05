@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeCInformation.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeCXXInformation.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeGenericSystem.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeRCInformation.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Compiler/MSVC-C.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Compiler/MSVC-CXX.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Platform/Windows.cmake
+C:/Tools/usr/local/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
+D:/recastnavigation/CMakeLists.txt
+D:/recastnavigation/build/CMakeFiles/3.17.1/CMakeCCompiler.cmake
+D:/recastnavigation/build/CMakeFiles/3.17.1/CMakeCXXCompiler.cmake
+D:/recastnavigation/build/CMakeFiles/3.17.1/CMakeRCCompiler.cmake
+D:/recastnavigation/build/CMakeFiles/3.17.1/CMakeSystem.cmake

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF9FB3C9-72E8-33CE-9FC5-1B3CFC646C30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\recastnavigation\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/recastnavigation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Tools\usr\local\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/recastnavigation -BD:/recastnavigation/build --check-stamp-file D:/recastnavigation/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\recastnavigation\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/recastnavigation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Tools\usr\local\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/recastnavigation -BD:/recastnavigation/build --check-stamp-file D:/recastnavigation/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\recastnavigation\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/recastnavigation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Tools\usr\local\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/recastnavigation -BD:/recastnavigation/build --check-stamp-file D:/recastnavigation/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\recastnavigation\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/recastnavigation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Tools\usr\local\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/recastnavigation -BD:/recastnavigation/build --check-stamp-file D:/recastnavigation/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Tools\usr\local\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\recastnavigation\build\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\recastnavigation\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\recastnavigation\build\ZERO_CHECK.vcxproj">
+      <Project>{636249F4-6C6B-3D26-84F5-8F2DBD5EF7BC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\DebugUtils\DebugUtils.vcxproj">
+      <Project>{E4CAB398-F07E-32FA-9CA1-15683338B508}</Project>
+      <Name>DebugUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\Detour\Detour.vcxproj">
+      <Project>{5C31541A-3556-35C1-8A9E-3E896269E00C}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\DetourCrowd\DetourCrowd.vcxproj">
+      <Project>{8DB814F2-7ABE-3AE6-9543-292B752D906F}</Project>
+      <Name>DetourCrowd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\DetourTileCache\DetourTileCache.vcxproj">
+      <Project>{0CBB1E91-3230-3C75-9957-4489160BA548}</Project>
+      <Name>DetourTileCache</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\Recast\Recast.vcxproj">
+      <Project>{645AD03F-2D9C-3090-917F-BF44F34A3609}</Project>
+      <Name>Recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\RecastDemo\RecastDemo.vcxproj">
+      <Project>{22DC8C92-2D4B-3795-886C-A24C25DAD100}</Project>
+      <Name>RecastDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\recastnavigation\build\Tests\Tests.vcxproj">
+      <Project>{5A78515A-E076-3137-84BD-AA3E764759BC}</Project>
+      <Name>Tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

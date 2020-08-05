@@ -1,0 +1,1 @@
+D:\NavMesh\cai-nav-0.4.0\source\build\unity\nav-u3d-editor\obj\Debug\cai-nav-u3d-editor.csprojResolveAssemblyReference.cache

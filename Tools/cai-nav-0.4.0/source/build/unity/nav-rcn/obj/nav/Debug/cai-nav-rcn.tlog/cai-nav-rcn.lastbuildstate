@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=true:VCToolArchitecture=Native32Bit
+Debug|Win32|D:\NavMesh\cai-nav-0.4.0\source\build\unity\|
